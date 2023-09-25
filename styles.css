@@ -1,0 +1,227 @@
+/* Default styles for the image */
+#responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for screens with a resolution less than 1024px */
+@media (max-width: 1023px) {
+    #responsive-image {
+        content: url('testmob.webp');
+        /* Change the image source for smaller screens */
+    }
+
+    .Description h1 {
+        font-size: 21.6px;
+    }
+
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: right;
+}
+
+.Description {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.Description h1 {
+    font-size: 40fr;
+    text-align: center;
+    color: rgb(135, 41, 41);
+}
+
+.Description p {
+    font-size: smaller;
+    text-align: center;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.category h1 {
+    font-size: 40fr;
+    text-align: center;
+    color: rgb(135, 41, 41);
+}
+
+.category p {
+    font-size: smaller;
+    text-align: center;
+}
+
+.collection h1 {
+    font-size: 40fr;
+    text-align: center;
+    color: rgb(135, 41, 41);
+}
+
+.collection p[class="sub"] {
+    font-size: smaller;
+    text-align: center;
+}
+
+.Grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    margin-top: 40px;
+    /* padding: 0 30px; */
+
+}
+
+.card-title {
+    color: rgb(140, 49, 49)
+}
+
+body {
+    background: rgb(243, 233, 233);
+}
+
+.navbar {
+    background-color: rgb(243, 233, 233);
+    box-shadow: 0 0 10px black;
+}
+
+.card {
+    width: 18rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+@media (max-width: 624px) {
+    .card {
+        width: 40%;
+        /* Decrease the width when the screen is less than 400px */
+        height: 40%;
+    }
+
+    .btn {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.CollectionSec {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.CollectionText {
+
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CollectionImg {
+
+    width: 40%;
+}
+
+.Image {
+    width: 100%;
+}
+
+.collectionName {
+    font-family: 'Arapey', serif;
+    font-size: 60px;
+    margin-bottom: 0%;
+    font-weight: 700;
+}
+
+.collectionSub {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    margin-top: 0;
+
+}
+
+p[class="collectionSub"]::before {
+    content: "~";
+}
+
+p[class="collectionSub"]::after {
+    content: "~";
+}
+
+@media (max-width:767px) {
+    .revcolumn {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .CollectionImg {
+        width: 80%;
+    }
+
+    .CollectionText {
+        width: 70%;
+    }
+
+    .column {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.faq h1 {
+    font-size: 40fr;
+    text-align: center;
+    color: rgb(135, 41, 41);
+    margin-bottom: 40px;
+}
+
+.accordion {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.Contact {
+    font-size: 40fr;
+    text-align: center;
+    color: rgb(135, 41, 41);
+    margin-bottom:10px;
+}
+
+.Contact a {
+    text-decoration: none;
+    color: rgb(135, 41, 41);
+    ;
+}
+
+.Contact div {
+    margin: 10px auto;
+}
+
+.mediahandles{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.Contact h1{
+    margin-bottom: 20px;
+}
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.nav-item{
+    font-size: 20px;
+}
