@@ -1,0 +1,267 @@
+:root{
+    /* rgb(243, 233, 233) */
+    --bodycolor:#D1B1CB;
+    --fontcolor:rgb(135, 41, 41);
+}
+
+
+/* Default styles for the image */
+#responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for screens with a resolution less than 1024px */
+@media (max-width: 1023px) {
+    #responsive-image {
+        content: url('testmob.webp');
+        /* Change the image source for smaller screens */
+    }
+
+    .Description h1 {
+        font-size: 21.6px;
+    }
+
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.Description {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.Description h1 {
+    font-size: 40fr;
+    text-align: center;
+    color: var(--fontcolor);
+    font-family: 'Arapey', serif;
+    
+}
+
+.Description p {
+    font-size: smaller;
+    text-align: center;
+}
+
+.nav-item {
+    text-align: center;
+    
+}
+
+.category h1 {
+    font-size: 40fr;
+    text-align: center;
+    color: var(--fontcolor);
+}
+
+.category p {
+    font-size: smaller;
+    text-align: center;
+}
+
+.collection h1 {
+    font-size: 40fr;
+    text-align: center;
+    color: var(--fontcolor);
+}
+
+.collection p[class="sub"] {
+    font-size: smaller;
+    text-align: center;
+}
+
+.Grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    margin-top: 40px;
+    /* padding: 0 30px; */
+
+}
+
+.card-title {
+    color: var(--fontcolor);
+}
+
+body {
+    background: linear-gradient(90deg, rgba(209,177,203,1) 0%, rgba(221,202,217,1) 25%, rgba(221,202,217,1) 50%, rgba(221,202,217,1) 75%, rgba(209,177,203,1) 100%);;
+}
+
+.navbar {
+    background-color: var(--bodycolor);
+    
+    /* box-shadow: 0 0 10px black; */
+}
+.navbar-toggler{
+    border: 0ch;
+}
+.navbar-toggler-icon{
+    stroke: white;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.card {
+    width: 18rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.616);
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+@media (max-width: 624px) {
+    .card {
+        width: 40%;
+        /* Decrease the width when the screen is less than 400px */
+        height: 40%;
+    }
+
+    .btn {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.CollectionSec {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.CollectionText {
+
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CollectionImg {
+
+    width: 40%;
+}
+
+.Image {
+    width: 100%;
+}
+
+.collectionName {
+    font-family: 'Arapey', serif;
+    font-size: 60px;
+    margin-bottom: 0%;
+    font-weight: 700;
+}
+.collection{
+    margin-top: 0.5%;
+}
+.collectionSub {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    margin-top: 0;
+
+}
+
+p[class="collectionSub"]::before {
+    content: "~";
+}
+
+p[class="collectionSub"]::after {
+    content: "~";
+}
+
+@media (max-width:767px) {
+    .revcolumn {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .CollectionImg {
+        width: 80%;
+    }
+
+    .CollectionText {
+        width: 70%;
+    }
+
+    .column {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.faq h1 {
+    font-size: 40fr;
+    text-align: center;
+    color: var(--fontcolor);
+    margin-bottom: 40px;
+}
+
+.accordion {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.Contact {
+    font-size: 40fr;
+    text-align: center;
+    color: var(--fontcolor);
+    margin-bottom:10px;
+}
+
+.Contact a {
+    text-decoration: none;
+    color: var(--fontcolor);
+    ;
+}
+
+.Contact div {
+    margin: 10px auto;
+}
+
+.mediahandles{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.Contact h1{
+    margin-bottom: 20px;
+}
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    padding: 0%;
+    margin: 0px 0 0 20px;
+    color: white;
+    transform: scale(1.3);
+
+}
+.nav-item{
+    font-size: 15px;
+    transform: scale(1.1);
+}
+.nav-link{
+    color: white;
+}
+.pagination{
+    margin-top: 40px;
+    margin-bottom: 0;
+    justify-content: center;
+}
